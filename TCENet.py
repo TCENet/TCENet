@@ -2,7 +2,7 @@ from time import sleep
 
 import numpy as np
 import sys
-project_root_path = ""
+project_root_path = "your project root path"
 sys.path.append(project_root_path)
 
 import torch

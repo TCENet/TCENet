@@ -1,7 +1,7 @@
 #coding: utf-8
 import numpy as np
 import sys
-project_root_path = "/the_project_root_path/"
+project_root_path = "your project root path"
 sys.path.append(project_root_path)
 
 from copy import deepcopy
@@ -9,6 +9,9 @@ import nltk
 import numpy as np
 from util import ioc_extract, file_util
 import data_structure
+
+# data_path = "Data/Bert_Data/"
+# model_path = "Model/Bert/model/"
 
 
 def ioc_info(text, sent_list):
@@ -170,7 +173,7 @@ def report_split(text):
     :return:
     """
 
-    text = text.replace("\n", "$[para]. ")
+    # text = text.replace("\n", "$[para]. ")
     temp_sent_list = nltk.sent_tokenize(text)
 
     record_remove_index = []
@@ -183,8 +186,8 @@ def report_split(text):
             if not temp_sent.endswith("."):
                 temp_sent = temp_sent + "."
             temp_sent_list[i] = temp_sent
-        if temp_sent == "$[para]." and temp_sent_list[i+1] == "$[para].":
-            record_remove_index.append(i+1)
+        # if temp_sent == "$[para]." and temp_sent_list[i+1] == "$[para].":
+        #     record_remove_index.append(i+1)
 
     paragraph_split_list = []
     for i in range(0, len(temp_sent_list)):
@@ -228,6 +231,41 @@ def report_data_organize(text):
         sent_list_ioc_holder, ioc_vector, ioc_normalized, result_remain_dict = ioc_info(temp_text, sent_list)
         context_data.append({
             "origin_list": [sent_front, sent, sent_post],
+            "sent_list": sent_list_ioc_holder,
+            "ioc_vector": list(ioc_vector),
+            "ioc_normalized": ioc_normalized
+        })
+    # if len(context_data) > 1:
+    #     print("BREAK")
+    return context_data
+
+
+
+def report_data_organize_for_sent(sent_list):
+    context_data = []
+    for i in range(0, len(sent_list)):
+        sent_list[i] = str(sent_list[i]).lower()
+    temp_text = " ".join(sent_list)
+    sent_list_ioc_holder, ioc_vector, ioc_normalized, result_remain_dict = ioc_info(temp_text, sent_list)
+    context_data.append({
+        "origin_list": sent_list[i],
+        "sent_list": sent_list_ioc_holder,
+        "ioc_vector": list(ioc_vector),
+        "ioc_normalized": ioc_normalized
+    })
+
+    return context_data
+
+def report_data_organize_for_sent_list(sent_list):
+    context_data = []
+    for i in range(0, len(sent_list)):
+        temp_sens = []
+        for k in sent_list[i]:
+            temp_sens.append(str(k).lower())
+        temp_text = " ".join(temp_sens)
+        sent_list_ioc_holder, ioc_vector, ioc_normalized, result_remain_dict = ioc_info(temp_text, temp_sens)
+        context_data.append({
+            "origin_list": sent_list[i],
             "sent_list": sent_list_ioc_holder,
             "ioc_vector": list(ioc_vector),
             "ioc_normalized": ioc_normalized
