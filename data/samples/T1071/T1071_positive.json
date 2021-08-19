@@ -1,0 +1,34 @@
+[
+  {
+    "origin_list": [
+      "this framework allows for a diverse set of capabilities across malware variants sharing a common code base.",
+      "chopstick may communicate with external servers using smtp or http.",
+      "this appendix documents variants using http communications."
+    ],
+    "sent_list": [
+      "this framework allows for a diverse set of capabilities across malware variants sharing a common code base.",
+      "chopstick may communicate with external servers using  $[protocol]  or  $[protocol] .",
+      "this appendix documents variants using  $[protocol]  communications."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "protocol": [
+        "http",
+        "smtp"
+      ]
+    }
+  }
+]

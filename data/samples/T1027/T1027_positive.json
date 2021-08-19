@@ -1,0 +1,31 @@
+[{
+    "origin_list": [
+      "The image features some tricks to thwart analysis, Juniper noted.",
+      "The encryption algorithm is RC4 and the keys are also embedded in the image at specific offset, according to the post.",
+      "The decrypted code is not a complete PE image, as it does not contain any header."
+    ],
+    "sent_list": [
+      "the image features some tricks to thwart analysis, juniper noted.",
+      "the encryption algorithm is $[codemethod]  and the keys are also embedded in the image at specific offset, according to the post.",
+      "the decrypted code is not a complete pe image, as it does not contain any header."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " rc4"
+      ]
+    }
+  }]

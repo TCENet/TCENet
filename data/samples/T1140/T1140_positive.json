@@ -1,0 +1,39 @@
+[
+  {
+    "origin_list": [
+      "If it runs on a Windows system, it will rename the aaa.png file to a.exe and execute it, said Maljic.",
+      "The extracted Ruby script contains Base64-encoded VBScript that is decoded and saved to the oh.vbs file.",
+      "This in turn creates a new VBScript file located on the Software Essentials.vbs path."
+    ],
+    "sent_list": [
+      "if it runs on a windows system, it will rename the  $[filename] file to  $[filename] and execute it, said maljic.",
+      "the extracted ruby script contains $[codemethod] -encoded vbscript that is decoded and saved to the  $[filename] file.",
+      "this in turn creates a new vbscript file located on the software  $[filename] path."
+    ],
+    "ioc_vector": [
+      -0.10416666666666667,
+      -0.10416666666666667,
+      -0.10416666666666667,
+      0.8958333333333334,
+      -0.10416666666666667,
+      -0.10416666666666667,
+      -0.10416666666666667,
+      -0.10416666666666667,
+      -0.10416666666666667,
+      0.14583333333333331,
+      -0.10416666666666667,
+      -0.10416666666666667
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "essentials.vbs",
+        "a.exe",
+        "aaa.png",
+        "oh.vbs"
+      ],
+      "codemethod": [
+        " base64"
+      ]
+    }
+  }
+]

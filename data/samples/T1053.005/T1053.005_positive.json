@@ -1,0 +1,36 @@
+[{
+    "origin_list": [
+      "For instance, the legitimate Windows Task Manager app (taskmgr.exe) should be located in the system folder C:\\Windows\\System32 and not in C:\\system.",
+      "To ensure that the mining program is launched each time the operating system starts, the necessary records are added either to Task Scheduler or to the registry auto-run keys.",
+      "Here are some examples of these records:."
+    ],
+    "sent_list": [
+      "for instance, the legitimate windows task manager app ( $[filename] ) should be located in the system folder  $[filepath]  and not in  $[filepath] .",
+      "to ensure that the mining program is launched each time the operating system starts, the necessary records are added either to task scheduler or to the registry auto-run keys.",
+      "here are some examples of these records:."
+    ],
+    "ioc_vector": [
+      -0.125,
+      -0.125,
+      -0.125,
+      0.375,
+      -0.125,
+      -0.125,
+      0.875,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "taskmgr.exe"
+      ],
+      "filepath": [
+        "c:\\system",
+        "c:\\windows\\system32"
+      ]
+    }
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "origin_list": [
+      "One of those emails is petersmelanie@protonmail.com, which was used to register 23 domains, including my1xbet[.]top.",
+      "This domain was used in a phishing campaign leveraging CVE-2017-0199 with a decoy document called Fraud Transaction.doc.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "one of those emails is  $[email] , which was used to register 23 domains, including my1xbet[.]top.",
+      "this domain was used in a phishing campaign leveraging  $[cve]  with a decoy document called fraud  $[filename] .",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.25,
+      -0.25,
+      0.75,
+      0.75,
+      -0.25,
+      -0.25,
+      -0.25,
+      -0.25,
+      0.75,
+      -0.25,
+      -0.25,
+      -0.25
+    ],
+    "ioc_normalized": {
+      "fqdn": [
+        "my1xbet.top",
+        "protonmail.com"
+      ],
+      "email": [
+        "petersmelanie@protonmail.com"
+      ],
+      "filename": [
+        "transaction.doc"
+      ],
+      "cve": [
+        "CVE-2017-0199"
+      ]
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[{
+    "origin_list": [
+      "helminth loads its keylogger module of the trojan by loading the wintrust.hlm file dropped by the herher trojan as a dll and calling its exported function named initialize.",
+      "the keylogger that creates a window named kk to monitor both the clipboard and keystrokes and to save the data in cleartext to the file %temp%/acro/users/[guid from cocreateguid]kk.tmp.",
+      "the keylogger saves the keystrokes and the name of the window visible while the keys were typed to this file in the following structure: ####t####[window name]####et#### [logged keystrokes]."
+    ],
+    "sent_list": [
+      "helminth loads its  $[dataobject]  module of the trojan by loading the wintrust.hlm file dropped by the herher trojan as a dll and calling its exported function named initialize.",
+      "the  $[dataobject]  that creates a window named kk to monitor both the  $[dataobject]  and  $[dataobject] s and to save the data in cleartext to the file %temp%/acro/users/[guid from  $[filename] .",
+      "the  $[dataobject]  saves the  $[dataobject] s and the name of the window visible while the keys were typed to this file in the following structure: ####t####[window name]####et#### [logged  $[dataobject] s]."
+    ],
+    "ioc_vector": [
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      0.22222222222222224,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      0.8888888888888888
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "cocreateguid]kk.tmp"
+      ],
+      "dataobject": [
+        "clipboard",
+        "keystroke",
+        "keylogger"
+      ]
+    }
+  }
+]
