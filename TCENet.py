@@ -89,11 +89,7 @@ class ThreatContext_enhanced_NN(nn.Module):
         final_out = self.fc_3(fc_out_2)
         return final_out
 
-
-
-
-
-def prediction(TIeNN, x_test):
+def prediction(TIeNN, x_test, device):
     TIeNN.eval()
     torch.no_grad()
     text_vector = []
@@ -105,9 +101,12 @@ def prediction(TIeNN, x_test):
     text_vector = np.array(text_vector)
     text_batch = torch.Tensor(text_vector)
     ioc_batch = torch.Tensor(ioc_vector)
+    text_batch = text_batch.to(device)
+    ioc_batch = ioc_batch.to(device)
     pred = TIeNN(text_batch, ioc_batch)
     pred_label = torch.max(pred, dim=1)[1]
-    return pred_label
+    pred_cpu = pred_label.cpu()
+    return pred_cpu
 
 def get_default_device():
     """Pick GPU if available, else CPU"""
@@ -138,11 +137,11 @@ if __name__ == '__main__':
     for i in range(0, len(all_text_data_np)):
         feed_in_x.append([all_text_data_np[i], all_ioc_vector_data[i]])
     TCE_NN = ThreatContext_enhanced_NN(2)
-    model_state_dict = torch.load(project_root_path + model_path + T_id + ".pth", map_location=torch.device('cpu'))
+    model_state_dict = torch.load(project_root_path + model_path + T_id + ".pth", map_location=torch.device(device))
     TCE_NN.load_state_dict(model_state_dict)
 
     TCE_NN.to(device)
-    result = prediction(TCE_NN, feed_in_x)
+    result = prediction(TCE_NN, feed_in_x, device)
     label_list_str = file_util.txt_to_str(project_root_path + data_path + T_id + "_label.txt")
     label_list_int = [int(y) for y in label_list_str.split()]
     err = np.abs(np.array(label_list_int) - np.array(result))
