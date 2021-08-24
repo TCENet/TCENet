@@ -8,3 +8,6 @@
 
 # The complete dataset.
 * We will publish our dataset after the official publication of the paper.
+
+# Examples
+* The examples folder provides a STIX 2.1 TTP intelligence example and a Sigma detection rule example. You can use the TTP intelligence JSON in this STIX 2.1 visualization website:https://oasis-open.github.io/cti-stix-visualization/.
