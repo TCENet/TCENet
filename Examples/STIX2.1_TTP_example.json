@@ -1,0 +1,185 @@
+[
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--7e33a43e-e34b-40ec-89da-36c9bb2cacd5",
+        "created": "2021-07-26T08:17:27.000Z",
+        "modified": "2021-07-26T08:17:27.000Z",
+        "name": "Spearphishing with malicious attachment",
+        "description": "",
+        "external_references": [
+            {
+                "source_name": "capec",
+                "external_id": "CAPEC-163"
+            }
+        ]
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--57b56a43-b8b0-4cba-9deb-34e3e1faed9e",
+        "created": "2021-07-26T08:17:27.000Z",
+        "modified": "2021-07-26T08:17:27.000Z",
+        "relationship_type": "indicates",
+        "source_ref": "indicator--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+        "target_ref": "attack-pattern--7e33a43e-e34b-40ec-89da-36c9bb2cacd5"
+    },
+    {
+        "type": "indicator",
+        "spec_version": "2.1",
+        "id": "indicator--8e2e2d2b-17d4-4cbf-938f-98ee46b3cd3f",
+        "created": "2021-07-26T20:03:48.000Z",
+        "modified": "2021-07-26T20:03:48.000Z",
+        "indicator_types": [
+            "malicious-activity"
+        ],
+        "name": "Malicious Email Attachment",
+        "description": "This is the file name of malicious attachment",
+        "pattern": "[file:name = 'AbleTimeAccess_Update.exe']",
+        "pattern_type": "stix",
+        "valid_from": "2021-07-26T20:03:48.000Z"
+    },
+    {
+        "type": "malware",
+        "spec_version": "2.1",
+        "id": "malware--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+        "created": "2021-07-26T08:17:27.000Z",
+        "modified": "2021-07-26T08:17:27.000Z",
+        "name": "HyperBro Backdoor",
+        "description": "The HyperBro backdoor is LuckyMouse’s custom backdoor used since at least 2013 and in continuous development.",
+        "malware_types": [
+            "Backdoor"
+        ],
+        "is_family": false
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--89b56a43-a7b0-35ba-6aeb-56e3e1faed9e",
+        "created": "2021-07-26T08:17:27.000Z",
+        "modified": "2021-07-26T08:17:27.000Z",
+        "relationship_type": "delivers",
+        "source_ref": "malware--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+        "target_ref": "attack-pattern--7e33a43e-e34b-40ec-89da-36c9bb2cacd5"
+    },
+    {
+        "type": "indicator",
+        "spec_version": "2.1",
+        "id": "indicator--b4477287-44ac-6771-a010-5c287877fa60",
+        "created": "2021-07-26T20:03:48.000Z",
+        "modified": "2021-07-26T20:03:48.000Z",
+        "indicator_types": [
+            "malicious-activity"
+        ],
+        "name": "HyperBro C2 URL",
+        "description": "This is the C2 URL of HyperBro",
+        "pattern": "[url:value = 'https://developer.firefoxapi[.]com/ajax']",
+        "pattern_type": "stix",
+        "valid_from": "2021-07-26T00:00:00Z"
+    },
+    {
+        "type": "indicator",
+        "spec_version": "2.1",
+        "id": "indicator--c1477287-23ac-5971-a010-5c287877fa60",
+        "created": "2021-07-26T20:03:48.000Z",
+        "modified": "2021-07-26T20:03:48.000Z",
+        "indicator_types": [
+            "malicious-activity"
+        ],
+        "name": "HyperBro C2 URL",
+        "description": "This is the C2 URL of HyperBro",
+        "pattern": "[url:value = 'https://139.180.208[.]225/ajax']",
+        "pattern_type": "stix",
+        "valid_from": "2021-07-26T00:00:00Z"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--11156a43-55b0-35ba-64eb-37e3e1faed9e",
+        "created": "2021-07-26T08:17:27.000Z",
+        "modified": "2021-07-26T08:17:27.000Z",
+        "relationship_type": "communicates-with",
+        "source_ref": "malware--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+        "target_ref": "indicator--b4477287-44ac-6771-a010-5c287877fa60"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--77b56a43-a7b0-35ba-6aeb-56e3e1faed9e",
+        "created": "2021-07-26T08:17:27.000Z",
+        "modified": "2021-07-26T08:17:27.000Z",
+        "relationship_type": "communicates-with",
+        "source_ref": "malware--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061",
+        "target_ref": "indicator--c1477287-23ac-5971-a010-5c287877fa60"
+    },
+    {
+        "type": "infrastructure",
+        "spec_version": "2.1",
+        "id": "infrastructure--38c47d93-d984-4fd9-b87b-d69d0841628d",
+        "created": "2016-05-07T11:22:30.000Z",
+        "modified": "2016-05-07T11:22:30.000Z",
+        "name": "HyperBro C2",
+        "infrastructure_types": [
+            "command-and-control"
+        ]
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--7aebe2f0-28d6-48a2-9c3e-b0aaa60266ed",
+        "created": "2016-05-09T08:17:27.000Z",
+        "modified": "2016-05-09T08:17:27.000Z",
+        "relationship_type": "controls",
+        "source_ref": "infrastructure--38c47d93-d984-4fd9-b87b-d69d0841628d",
+        "target_ref": "malware--0c7b5b88-8ff7-4a4d-aa9d-feb398cd0061"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--7aebe2f0-28d6-48a2-9c3e-b0aaa60266ef",
+        "created": "2016-05-09T08:17:27.000Z",
+        "modified": "2016-05-09T08:17:27.000Z",
+        "relationship_type": "consists-of",
+        "source_ref": "infrastructure--38c47d93-d984-4fd9-b87b-d69d0841628d",
+        "target_ref": "indicator--b4477287-44ac-6771-a010-5c287877fa60"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--b82b2819-3b86-4bd5-afb3-fa36cfbc3f18",
+        "created": "2016-05-09T08:17:27.000Z",
+        "modified": "2016-05-09T08:17:27.000Z",
+        "relationship_type": "consists-of",
+        "source_ref": "infrastructure--38c47d93-d984-4fd9-b87b-d69d0841628d",
+        "target_ref": "indicator--c1477287-23ac-5971-a010-5c287877fa60"
+    },
+    {
+        "type": "attack-pattern",
+        "spec_version": "2.1",
+        "id": "attack-pattern--355be19c-ffc9-46d5-8d50-d6a036c675b6",
+        "created": "2021-07-26T08:17:27.000Z",
+        "modified": "2021-07-26T08:17:27.000Z",
+        "name": "Application Layer Protocol",
+        "description": "The C&C URL of the HyperBro implant used with the trojanized Able Desktop installer is https://developer.firefoxapi[.]com/ajax, while the C&C URL used by the one downloaded by the legitimate Able Desktop is https://139.180.208[.]225/ajax"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--58b56a43-12b0-4cba-9deb-34e3e1faed9e",
+        "created": "2021-07-26T08:17:27.000Z",
+        "modified": "2021-07-26T08:17:27.000Z",
+        "relationship_type": "indicates",
+        "source_ref": "indicator--b4477287-44ac-6771-a010-5c287877fa60",
+        "target_ref": "attack-pattern--355be19c-ffc9-46d5-8d50-d6a036c675b6"
+    },
+    {
+        "type": "relationship",
+        "spec_version": "2.1",
+        "id": "relationship--59b56a43-43b0-53ba-7deb-34e3e1faed9e",
+        "created": "2021-07-26T08:17:27.000Z",
+        "modified": "2021-07-26T08:17:27.000Z",
+        "relationship_type": "indicates",
+        "source_ref": "indicator--c1477287-23ac-5971-a010-5c287877fa60",
+        "target_ref": "attack-pattern--355be19c-ffc9-46d5-8d50-d6a036c675b6"
+    }
+]

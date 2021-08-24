@@ -1,0 +1,35 @@
+# T1566: Spearphishing
+title: Malicious Mail Attachment
+id: 1cdd9a09-06c9-4769-99ff-626e2b3991b8
+description: We believe that compromised company was Able, as the filename used in that malicious email attachment is  probably AbleTimeAccess_Update.exe, and we observed such a file being used to drop the same HyperBro sample as described in Avast’s blogpost.
+references:
+    - https://www.welivesecurity.com/2020/12/10/luckymouse-ta428-compromise-able-desktop/
+date: 2021/07/26
+tags:
+    - attack.initial_access
+    - attack.t1566
+logsource:
+    category: process_creation
+    product: windows
+detection:
+        TargetFileName:
+            - 'AbleTimeAccess_Update.exe'
+level: critical
+
+# T1071: Application Layer Protocol
+title: HyperBro Malware C2 URL Pattern
+id: 932ac737-33ca-4afd-9869-0d48b391fcc9
+status: stable
+description: Detects HyperBro C2 traffic.
+references:
+  - https://www.welivesecurity.com/2020/12/10/luckymouse-ta428-compromise-able-desktop/
+logsource:
+  category: proxy
+detection:
+  urlpath: 
+      - "https://developer.firefoxapi[.]com/ajax"
+      - "https://139.180.208[.]225/ajax."
+level: critical
+tags:
+    - attack.command_and_control
+    - attack.t1071
