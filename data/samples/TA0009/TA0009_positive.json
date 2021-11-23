@@ -1,4 +1,5 @@
-[{
+[
+  {
     "origin_list": [
       "helminth loads its keylogger module of the trojan by loading the wintrust.hlm file dropped by the herher trojan as a dll and calling its exported function named initialize.",
       "the keylogger that creates a window named kk to monitor both the clipboard and keystrokes and to save the data in cleartext to the file %temp%/acro/users/[guid from cocreateguid]kk.tmp.",
@@ -31,6 +32,615 @@
         "clipboard",
         "keystroke",
         "keylogger"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "attaching a debugger to dllhost.exe, reveals the keylogger files and configuration, replaced dll file, as well as another folder, which is likely used to store screenshots and other data.",
+      "another ascii string can be discovered in the dll’s config, mddefgegetgiz, which likely pertains to the specific keyboy campaign, or target."
+    ],
+    "sent_list": [
+      "$[para].",
+      "attaching a debugger to  $[filename] , reveals the  $[dataobject]  files and configuration, replaced dll file, as well as another folder, which is likely used to store screenshots and other data.",
+      "another ascii string can be discovered in the dll’s config, mddefgegetgiz, which likely pertains to the specific keyboy campaign, or target."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "dllhost.exe"
+      ],
+      "dataobject": [
+        "keylogger"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "the malware leveraged by keyboy has a plethora of functionality, including, but not limited to: screen grabbing/taking screenshots; determine public or wan ip address (using a public ip service), likely for determining a suited target; gather extended system information, such as information about the operating system, disks, memory and so on; a ‘file browser’ or explorer; shutdown and reboot commands (in addition to the point below); launching interactive shells for communicating with the victim machine; download and upload functionality; and usage of custom ssl libraries for masquerading c2 traffic.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "$[para].",
+      "the malware leveraged by keyboy has a plethora of functionality, including, but not limited to: screen grabbing/taking screenshots; determine public or wan ip address (using a public ip service), likely for determining a suited target; gather extended system information, such as information about the operating system, disks, memory and so on; a ‘file browser’ or explorer; shutdown and reboot commands (in addition to the point below); launching interactive shells for communicating with the victim machine; download and upload functionality; and usage of custom ssl libraries for masquerading c2 traffic.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "this malware can record the victim’s keyboard inputs, steal data from the system clipboard when its content changes, capture screenshots of the victim’s system screen, and collect credentials from installed software that the malware is interested in.",
+      "to complete these tasks, it creates a variety of threads and timers."
+    ],
+    "sent_list": [
+      "$[para].",
+      "this malware can record the victim’s keyboard inputs, steal data from the system  $[dataobject]  when its content changes, capture screenshots of the victim’s system screen, and collect credentials from installed software that the malware is interested in.",
+      "to complete these tasks, it creates a variety of threads and timers."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "clipboard"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "stealing keyboard inputs, system clipboard contents, and screen shots.",
+      "before the main function is called, three hook objects are defined in the construction function of the main class."
+    ],
+    "sent_list": [
+      "$[para].",
+      "stealing keyboard inputs, system  $[dataobject]  contents, and screen shots.",
+      "before the main function is called, three hook objects are defined in the construction function of the main class."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "clipboard"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "before the main function is called, three hook objects are defined in the construction function of the main class.",
+      "these are used for hooking the keyboard, mouse, and clipboard.",
+      "it then sets hook functions for all of them so that when victim inputs something by keyboard, or when the clipboard data is changed (ctrl+c), the hook functions will be called first."
+    ],
+    "sent_list": [
+      "before the main function is called, three hook objects are defined in the construction function of the main class.",
+      "these are used for hooking the keyboard, mouse, and  $[dataobject] .",
+      "it then sets hook functions for all of them so that when victim inputs something by keyboard, or when the  $[dataobject]  data is changed (ctrl+c), the hook functions will be called first."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "clipboard"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "“type” holds the command name; “hwid” is the hardware id; “time” is the current date and time; “pcname” consists of the user name and computer name; “logdata” consists of key log and clipboard data; “screen” is base64 encoded screen.jpeg file content; “ipadd” is not used; “wbscreen” consists of picture content from the camera; “client” is the name of the software; “link” is the software’s website; “username” is the logon user name; “password” is the logon password; “screen_name” is not used.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "$[para].",
+      "“type” holds the command name; “hwid” is the hardware id; “time” is the current date and time; “pcname” consists of the user name and computer name; “logdata” consists of key log and  $[dataobject]  data; “screen” is $[codemethod]  encoded screen.jpeg file content; “ipadd” is not used; “wbscreen” consists of picture content from the camera; “client” is the name of the software; “link” is the software’s website; “username” is the logon user name; “ $[dataobject] ” is the logon  $[dataobject] ; “screen_name” is not used.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      0.375,
+      -0.125,
+      0.875
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " base64"
+      ],
+      "dataobject": [
+        "clipboard",
+        "password"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "Another  common method of illegal moneymaking is the collection and sale of users’  confidential data.",
+      "Contact details and personal data are tradable commodities  that can be sold on the black market, albeit not for a great deal of money."
+    ],
+    "sent_list": [
+      "$[para].",
+      "another  common method of illegal moneymaking is the collection and sale of users’  confidential data.",
+      "contact details and personal data are tradable commodities  that can be sold on the black market, albeit not for a great deal of money."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "Contact details and personal data are tradable commodities  that can be sold on the black market, albeit not for a great deal of money.",
+      "However,  it can be a profitable sideline, especially as the collection of information does  not necessarily require any malware infection.",
+      "Often the victims themselves  supply all the necessary information — the important thing is for the site  hosting the form for the entry of data to appear reliable and authentic."
+    ],
+    "sent_list": [
+      "contact details and personal data are tradable commodities  that can be sold on the black market, albeit not for a great deal of money.",
+      "however,  it can be a profitable sideline, especially as the collection of information does  not necessarily require any malware infection.",
+      "often the victims themselves  supply all the necessary information — the important thing is for the site  hosting the form for the entry of data to appear reliable and authentic."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "Amazon recently found itself in hot water over a similar employee-listening and recording issue, for instance.",
+      "“The biggest concern that I have is actually around data retention policies and disclosure,” said Tim Mackey, principal security strategist at the cybersecurity research center at Synopsys, speaking to Threatpost in a recent podcast on voice assistant privacy issues.",
+      "“So we have an expectation that these are connected devices, and that perhaps short of the Alexa-then-perform-action activity, that the communication, the actual processing of our request is going to occur on an Amazon server, Google server or so forth…."
+    ],
+    "sent_list": [
+      "amazon recently found itself in hot water over a similar employee-listening and recording issue, for instance.",
+      "“the biggest concern that i have is actually around data retention policies and disclosure,” said tim mackey, principal security strategist at the cybersecurity research center at synopsys, speaking to threatpost in a recent podcast on voice assistant privacy issues.",
+      "“so we have an expectation that these are connected devices, and that perhaps short of the alexa-then-perform-action activity, that the communication, the actual processing of our request is going to occur on an amazon server, google server or so forth…."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "ku64.dll, ku32.dll, keylogger & clipboard monitor.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "$[para].",
+      " $[filename] ,  $[filename] ,  $[dataobject]  &  $[dataobject]  monitor.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "ku32.dll",
+        "ku64.dll"
+      ],
+      "dataobject": [
+        "clipboard",
+        "keylogger"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "the folder c:\\users\\public\\administrador\\logs\\ is created to store screenshots, as well as the number of mouse clicks the user has triggered while browsing the banking sites (figure 12).",
+      "the screenshots are continuously saved as .jpg images.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "the folder c:\\users\\public\\administrador\\logs\\ is created to store screenshots, as well as the number of mouse clicks the user has triggered while browsing the banking sites (figure 12).",
+      "the screenshots are continuously saved as .jpg images.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "'<|dispida|>logs>save<' sends the screenshots collected in gh.txt.",
+      "'<ping>' is sent from c2 to host, and '<pong>' is sent from host to c2, to keep the connection alive."
+    ],
+    "sent_list": [
+      "$[para].",
+      "'<|dispida|>logs>save<' sends the screenshots collected in  $[filename] .",
+      "'<ping>' is sent from c2 to host, and '<pong>' is sent from host to c2, to keep the connection alive."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "gh.txt"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "the helminth executable variant is very similar in functionality to its script-based counterpart, as it also communicates with its c2 server using both http and dns queries.",
+      "the major difference in capabilities between the two variants is that the executable version comes with a module that helminth uses to log keystrokes and the clipboard contents to exfiltrate to the c2 server.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "the helminth executable variant is very similar in functionality to its script-based counterpart, as it also communicates with its c2 server using both  $[protocol]  and  $[protocol]  queries.",
+      "the major difference in capabilities between the two variants is that the executable version comes with a module that helminth uses to log  $[dataobject] s and the  $[dataobject]  contents to exfiltrate to the c2 server.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      0.8333333333333334
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "clipboard",
+        "keystroke"
+      ],
+      "protocol": [
+        "http",
+        "dns"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "helminth loads its keylogger module of the trojan by loading the wintrust.hlm file dropped by the herher trojan as a dll and calling its exported function named ‘initialize’.",
+      "the keylogger that creates a window named ‘kk’ to monitor both the clipboard and keystrokes and to save the data in cleartext to the file ‘%temp%/acro/users/[guid from cocreateguid]kk.tmp’.",
+      "the keylogger saves the keystrokes and the name of the window visible while the keys were typed to this file in the following structure: ####t####[window name]####et#### [logged keystrokes]."
+    ],
+    "sent_list": [
+      "helminth loads its  $[dataobject]  module of the trojan by loading the wintrust.hlm file dropped by the herher trojan as a dll and calling its exported function named ‘initialize’.",
+      "the  $[dataobject]  that creates a window named ‘kk’ to monitor both the  $[dataobject]  and  $[dataobject] s and to save the data in cleartext to the file ‘%temp%/acro/users/[guid from  $[filename] ’.",
+      "the  $[dataobject]  saves the  $[dataobject] s and the name of the window visible while the keys were typed to this file in the following structure: ####t####[window name]####et#### [logged  $[dataobject] s]."
+    ],
+    "ioc_vector": [
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      0.22222222222222224,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      -0.1111111111111111,
+      0.8888888888888888
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "cocreateguid]kk.tmp"
+      ],
+      "dataobject": [
+        "clipboard",
+        "keystroke",
+        "keylogger"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "the wintrust.hlm keylogger logs the contents of the clipboard to the same file, but the clipboard contents do not follow a header that specifies the window name like the other logged keystrokes.",
+      "the clipboard contents are logged to the file in the following format: <<< clipboard —> [contents of clipboard]>>>."
+    ],
+    "sent_list": [
+      "$[para].",
+      "the wintrust.hlm  $[dataobject]  logs the contents of the  $[dataobject]  to the same file, but the  $[dataobject]  contents do not follow a header that specifies the window name like the other logged  $[dataobject] s.",
+      "the  $[dataobject]  contents are logged to the file in the following format: <<<  $[dataobject]  —> [contents of  $[dataobject] ]>>>."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "clipboard",
+        "keystroke",
+        "keylogger"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "the wintrust.hlm keylogger logs the contents of the clipboard to the same file, but the clipboard contents do not follow a header that specifies the window name like the other logged keystrokes.",
+      "the clipboard contents are logged to the file in the following format: <<< clipboard —> [contents of clipboard]>>>.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "the wintrust.hlm  $[dataobject]  logs the contents of the  $[dataobject]  to the same file, but the  $[dataobject]  contents do not follow a header that specifies the window name like the other logged  $[dataobject] s.",
+      "the  $[dataobject]  contents are logged to the file in the following format: <<<  $[dataobject]  —> [contents of  $[dataobject] ]>>>.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "clipboard",
+        "keystroke",
+        "keylogger"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "the screenutil module, which was first reported in 2017, takes a screenshot of the current user's desktop.",
+      "all variants analyzed by ctu researchers were hard-coded to drop the captured image files to %appdata%\\update\\tmp\\."
+    ],
+    "sent_list": [
+      "$[para].",
+      "the screenutil module, which was first reported in 2017, takes a screenshot of the current user's  $[dataobject] .",
+      "all variants analyzed by ctu researchers were hard-coded to drop the captured image files to  $[filepath] \\."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334
+    ],
+    "ioc_normalized": {
+      "filepath": [
+        "%appdata%\\update\\tmp"
+      ],
+      "dataobject": [
+        "desktop"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "monitors the current foreground window title for a list of hard-coded keywords (headtime, total, outlook, passw, auth, login, message, letter, enter, request, reply, scheme, plan, secret, graf, bank, mail, passview).",
+      "if a window is open with any of these keywords in the title, a screenshot is taken in bmp format before being converted to a jpg file and stored to the install path as “pic.jpg”.",
+      "this file is then copied to the main karagany plugin data folder %appdata%\\roaming\\update\\tmp and given a unique name of pic%d.jpg, where %d is the current system tick count."
+    ],
+    "sent_list": [
+      "monitors the current foreground window title for a list of hard-coded keywords (headtime, total,  $[dataobject] , passw, auth, login, message, letter, enter, request, reply, scheme, plan, secret, graf, bank, mail, passview).",
+      "if a window is open with any of these keywords in the title, a screenshot is taken in bmp format before being converted to a jpg file and stored to the install path as  $[filename] ”.",
+      "this file is then copied to the main karagany plugin data folder  $[filepath] , where %d is the current system tick count."
+    ],
+    "ioc_vector": [
+      -0.25,
+      -0.25,
+      -0.25,
+      0.75,
+      -0.25,
+      -0.25,
+      0.75,
+      -0.25,
+      -0.25,
+      -0.25,
+      -0.25,
+      0.75
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "pic%d.jpg",
+        "“pic.jpg"
+      ],
+      "filepath": [
+        "%appdata%\\roaming\\update\\tmp and given a unique name of pic%d.jpg"
+      ],
+      "dataobject": [
+        "outlook"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "screenshots via smtp.",
+      "the malware takes screenshots on the victim computer, exfiltrating them using smtp (port 26) as “gdiplus_image1.jpg” and “gdiplus_image2.jpg”.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "screenshots via  $[protocol] .",
+      "the malware takes screenshots on the victim computer, exfiltrating them using  $[protocol]  (port 26) as  $[filename] ” and  $[filename] ”.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.125,
+      -0.125,
+      -0.125,
+      0.875,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      0.375,
+      -0.125
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "“gdiplus_image1.jpg",
+        "“gdiplus_image2.jpg"
+      ],
+      "protocol": [
+        "smtp"
       ]
     }
   }

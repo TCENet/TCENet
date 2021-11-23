@@ -39,5 +39,566 @@
         "CVE-2017-0199"
       ]
     }
+  },
+  {
+    "origin_list": [
+      "Earlier this year we observed an  increase in the number of attacks on Uyghur and Tibetan activists, using an  updated version of the NetTraveler backdoor.",
+      "The attackers use spear-phishing e-mails to lure their victims:\u00a0 e-mails include a Microsoft Word document  that contains the CVE-2012-0158 exploit.",
+      "This drops the main module (net.exe) onto the computer, which in turn  installs a number of other files, including the main C2 module."
+    ],
+    "sent_list": [
+      "earlier this year we observed an  increase in the number of attacks on uyghur and tibetan activists, using an  updated version of the nettraveler backdoor.",
+      "the attackers use spear-phishing e-mails to lure their victims:\u00a0 e-mails include a microsoft word document  that contains the  $[cve]  exploit.",
+      "this drops the main module ( $[filename] ) onto the computer, which in turn  installs a number of other files, including the main c2 module."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "net.exe"
+      ],
+      "cve": [
+        "CVE-2012-0158"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "Both end users of Microsoft Office software and system administrators of SharePoint portals, Microsoft Office Web Apps servers, and even Apple Office for Mac users need to download and install these patches: MS14-017 and MS14-018.",
+      "These sorts of Office vulnerabilities are commonly and frequently the delivery vector for targeted attack spearphishing campaigns.",
+      "Red October, NetTraveler, and Icefog, all abused Office vulnerabilities in their spearphishing campaigns."
+    ],
+    "sent_list": [
+      "both end users of microsoft office software and system administrators of sharepoint portals, microsoft office web apps servers, and even apple office for mac users need to download and install these patches: ms14-017 and ms14-018.",
+      "these sorts of office vulnerabilities are commonly and frequently the delivery vector for targeted attack spearphishing campaigns.",
+      "red october, nettraveler, and icefog, all abused office vulnerabilities in their spearphishing campaigns."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "These sorts of Office vulnerabilities are commonly and frequently the delivery vector for targeted attack spearphishing campaigns.",
+      "Red October, NetTraveler, and Icefog, all abused Office vulnerabilities in their spearphishing campaigns.",
+      "There are many more of these groups, and they will continue to actively pursue potential victims, in part using exploits for Office applications."
+    ],
+    "sent_list": [
+      "these sorts of office vulnerabilities are commonly and frequently the delivery vector for targeted attack spearphishing campaigns.",
+      "red october, nettraveler, and icefog, all abused office vulnerabilities in their spearphishing campaigns.",
+      "there are many more of these groups, and they will continue to actively pursue potential victims, in part using exploits for office applications."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "Malicious attachments in email.",
+      "Phishing.",
+      "Conclusion."
+    ],
+    "sent_list": [
+      "malicious attachments in email.",
+      "phishing.",
+      "conclusion."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "The percentage of spam in email traffic was up 2.1 percentage points compared with March and averaged 72.2%.",
+      "The percentage of phishing emails decreased by a factor of three compared with March, dropping to 0.002%.",
+      "In April, malicious files were found in 2.4% of all emails, a decrease of 1.6 percentage points."
+    ],
+    "sent_list": [
+      "the percentage of spam in email traffic was up 2.1 percentage points compared with march and averaged 72.2%.",
+      "the percentage of phishing emails decreased by a factor of three compared with march, dropping to 0.002%.",
+      "in april, malicious files were found in 2.4% of all emails, a decrease of 1.6 percentage points."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "A persons name was never associated with the user account in the exposed Stratfor database, so at this point we dont know how well the attackers know the Tibetan community.",
+      "On the technical side of things, there are some interesting characteristics to this 266Kb attachment, which is a normal size for a lot of the spearphish we see.",
+      "The file is an exploit posing as a Word document targeting buggy code in mscomctl.ocx, known as CVE-2012-0158."
+    ],
+    "sent_list": [
+      "a persons name was never associated with the user account in the exposed stratfor database, so at this point we dont know how well the attackers know the tibetan community.",
+      "on the technical side of things, there are some interesting characteristics to this 266kb attachment, which is a normal size for a lot of the spearphish we see.",
+      "the file is an exploit posing as a word document targeting buggy code in mscomctl.ocx, known as  $[cve] ."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "cve": [
+        "CVE-2012-0158"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "Here is the very start of the file signifying the file type.",
+      "This type of content is unusual for the CVE-2012-0158 spearphish we have seen to this point:.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "here is the very start of the file signifying the file type.",
+      "this type of content is unusual for the  $[cve]  spearphish we have seen to this point:.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "cve": [
+        "CVE-2012-0158"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "Spearphishing using PDF  documents embedded with a flash exploit (CVE-2011-0611).",
+      "Trojanized software installers."
+    ],
+    "sent_list": [
+      "$[para].",
+      "spearphishing using pdf  documents embedded with a flash exploit ( $[cve] ).",
+      "trojanized software installers."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "cve": [
+        "CVE-2011-0611"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "Amazon-Themed Phishing Campaigns Swim Past Security Checks.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "$[para].",
+      "amazon-themed phishing campaigns swim past security checks.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "Here is the very start of the file signifying the file type.",
+      "This type of content is unusual for the CVE-2012-0158 spearphish we have seen to this point:.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "here is the very start of the file signifying the file type.",
+      "this type of content is unusual for the  $[cve]  spearphish we have seen to this point:.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "cve": [
+        "CVE-2012-0158"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "And, “the attack vector for CVE-2019-1367 was rather atypical as the exploit was delivered from an Office document abusing the online video embedding feature to load an external URL conducting the exploitation.”.",
+      "In one campaign, a single APT was seen using five zero-day exploits, delivered using watering-hole attacks, links to malicious websites and inemail attachments in targeted spear-phishing campaigns.",
+      "“Finding this many zero-day exploits from the same actor in a relatively short time frame is rare,” said Gidwani."
+    ],
+    "sent_list": [
+      "and, “the attack vector for  $[cve]  was rather atypical as the exploit was delivered from an office document abusing the online video embedding feature to load an external url conducting the exploitation.”.",
+      "in one campaign, a single apt was seen using five zero-day exploits, delivered using watering-hole attacks, links to malicious websites and inemail attachments in targeted spear-phishing campaigns.",
+      "“finding this many zero-day exploits from the same actor in a relatively short time frame is rare,” said gidwani."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "cve": [
+        "CVE-2019-1367"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "This Trojan uses spoofing technology and imitates an HTML page.",
+      "It comes with a phishing email containing a link to a fake site resembling that of a well-known bank or e-pay system where the user is asked to enter a login and a password.",
+      "The data entered on the page is sent to cybercriminals."
+    ],
+    "sent_list": [
+      "this trojan uses spoofing technology and imitates an html page.",
+      "it comes with a phishing email containing a link to a fake site resembling that of a well-known bank or e-pay system where the user is asked to enter a login and a  $[dataobject] .",
+      "the data entered on the page is sent to cybercriminals."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "password"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "We block and flag sites for being infected or for containing potentially malicious downloads, such as driverupdate.net, which was found to be spreading malware and potentially unwanted programs (PUPs).",
+      "We also block sites such as gleeze.com and coinhive.com for harboring phishing websites and engaging in malicious cryptomining activities, respectively.",
+      "In some cases, website blocking isn’t permanent."
+    ],
+    "sent_list": [
+      "we block and flag sites for being infected or for containing potentially malicious downloads, such as  $[fqdn] , which was found to be spreading malware and potentially unwanted programs (pups).",
+      "we also block sites such as  $[fqdn]  and  $[fqdn]  for harboring phishing websites and engaging in malicious cryptomining activities, respectively.",
+      "in some cases, website blocking isn’t permanent."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "fqdn": [
+        "coinhive.com",
+        "driverupdate.net",
+        "gleeze.com"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "The earlier attacks used Office exploits (CVE-2012-0158) that were patched by Microsoft last April.",
+      "In addition to the use of spear-phishing emails, APT operators have adopted the watering hole technique (web redirections and drive-by downloads on rigged domains) to infect victims surfing the web.šKaspersky Lab intercepted and blocked a number of infection attempts from the “weststock[dot]org” domain, which is a known site linked to previous NetTraveler attacks.",
+      "These redirections appear to come from other Uyghur-related websites that were compromised and infected by the NetTraveler attackers."
+    ],
+    "sent_list": [
+      "the earlier attacks used office exploits ( $[cve] ) that were patched by microsoft last april.",
+      "in addition to the use of spear-phishing emails, apt operators have adopted the watering hole technique (web redirections and drive-by downloads on rigged domains) to infect victims surfing the web.škaspersky lab intercepted and blocked a number of infection attempts from the “ $[fqdn] ” domain, which is a known site linked to previous nettraveler attacks.",
+      "these redirections appear to come from other uyghur-related websites that were compromised and infected by the nettraveler attackers."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666
+    ],
+    "ioc_normalized": {
+      "fqdn": [
+        "weststock.org"
+      ],
+      "cve": [
+        "CVE-2012-0158"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "Oftentimes, it is easy to pin down intent based on the kind of threat being carried out.",
+      "A phishing email, for example, gives a clear indication that whoever is behind the campaign is aiming to gather something from their target—be it sensitive information or money.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "oftentimes, it is easy to pin down intent based on the kind of threat being carried out.",
+      "a phishing email, for example, gives a clear indication that whoever is behind the campaign is aiming to gather something from their target—be it sensitive information or money.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "In many cases, the phishing email carries with it a malware payload, or a link to its download location.",
+      "The malware, once executed, then seeks and siphons out information back to its command center."
+    ],
+    "sent_list": [
+      "$[para].",
+      "in many cases, the phishing email carries with it a malware payload, or a link to its download location.",
+      "the malware, once executed, then seeks and siphons out information back to its command center."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "A person’s name was never associated with the user account in the exposed Stratfor database, so at this point we don’t know how well the attackers know the Tibetan community.",
+      "On the technical side of things, there are some interesting characteristics to this 266Kb attachment, which is a normal size for a lot of the spearphish we see.",
+      "The file is an exploit posing as a Word document targeting buggy code in mscomctl.ocx, known as CVE-2012-0158."
+    ],
+    "sent_list": [
+      "a person’s name was never associated with the user account in the exposed stratfor database, so at this point we don’t know how well the attackers know the tibetan community.",
+      "on the technical side of things, there are some interesting characteristics to this 266kb attachment, which is a normal size for a lot of the spearphish we see.",
+      "the file is an exploit posing as a word document targeting buggy code in mscomctl.ocx, known as  $[cve] ."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "cve": [
+        "CVE-2012-0158"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "How does “Machete” operate?.",
+      "The malware is distributed via social engineering techniques, which includes spear-phishing emails and infections via Web by a fake Blog website.",
+      "We have found no evidence of of exploits targeting zero-day vulnerabilities."
+    ],
+    "sent_list": [
+      "how does “machete” operate?.",
+      "the malware is distributed via social engineering techniques, which includes spear-phishing emails and infections via web by a fake blog website.",
+      "we have found no evidence of of exploits targeting zero-day vulnerabilities."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "Both the attackers and the victims appear to be Spanish-speaking.",
+      "During this investigation, we also discovered many other the files installing this cyber-espionage tool in what appears to be a dedicated a spear phishing campaign.",
+      "These files display a PowerPoint presentation that installs the malware on the target system once the file is opened."
+    ],
+    "sent_list": [
+      "both the attackers and the victims appear to be spanish-speaking.",
+      "during this investigation, we also discovered many other the files installing this cyber-espionage tool in what appears to be a dedicated a spear phishing campaign.",
+      "these files display a powerpoint presentation that installs the malware on the target system once the file is opened."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
   }
 ]

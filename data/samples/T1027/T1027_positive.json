@@ -1,4 +1,5 @@
-[{
+[
+  {
     "origin_list": [
       "The image features some tricks to thwart analysis, Juniper noted.",
       "The encryption algorithm is RC4 and the keys are also embedded in the image at specific offset, according to the post.",
@@ -28,4 +29,585 @@
         " rc4"
       ]
     }
-  }]
+  },
+  {
+    "origin_list": [
+      "Snake was first publicized in January after being discovered and analyzed by MalwareHunterTeam and reverse-engineer Vitali Kremez.",
+      "Researchers at Dragos also looked into the malware, which is written in the Go language, is heavily obfuscated, goes after ICS/SCADA environments, and tends to be highly targeted.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "snake was first publicized in january after being discovered and analyzed by malwarehunterteam and reverse-engineer vitali kremez.",
+      "researchers at dragos also looked into the malware, which is written in the go language, is heavily obfuscated, goes after ics/scada environments, and tends to be highly targeted.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "The ad also lists protective gear to make analysis more difficult, consisting of a unique custom obfuscator that the author said morphs all code and encrypts strings and all constant values in the code..",
+      "According to researchers, all of the malicious modules are obfuscated."
+    ],
+    "sent_list": [
+      "$[para].",
+      "the ad also lists protective gear to make analysis more difficult, consisting of a unique custom obfuscator that the author said morphs all code and encrypts strings and all constant values in the code..",
+      "according to researchers, all of the malicious modules are obfuscated."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "The ad also lists protective gear to make analysis more difficult, consisting of a unique custom obfuscator that the author said morphs all code and encrypts strings and all constant values in the code..",
+      "According to researchers, all of the malicious modules are obfuscated.",
+      "The characteristics of the obfuscation indicates that it has been applied on the source-code, pre-compilation, according to the analysis."
+    ],
+    "sent_list": [
+      "the ad also lists protective gear to make analysis more difficult, consisting of a unique custom obfuscator that the author said morphs all code and encrypts strings and all constant values in the code..",
+      "according to researchers, all of the malicious modules are obfuscated.",
+      "the characteristics of the obfuscation indicates that it has been applied on the source-code, pre-compilation, according to the analysis."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "Another version (3.0) of Imminent Monitor introduced the ability to run a cryptocurrency miner on the victim machine.",
+      "Also, the keylogger keeps its activities hidden from the desktop owner and encrypted.",
+      "A crypter, allowing a Fully UnDetectable (FUD) client, only has one purpose: To attempt to evade antivirus detection, according to Unit 42s analysis, posted Monday."
+    ],
+    "sent_list": [
+      "another version (3.0) of imminent monitor introduced the ability to run a cryptocurrency miner on the victim machine.",
+      "also, the  $[dataobject]  keeps its activities hidden from the  $[dataobject]  owner and encrypted.",
+      "a crypter, allowing a fully undetectable (fud) client, only has one purpose: to attempt to evade antivirus detection, according to unit 42s analysis, posted monday."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "desktop",
+        "keylogger"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "The directory with executable files inside the application package contains two Python scripts: gjpWvvuUD847DzQPyBI (main) and goQWAJdbnuv6 (auxiliary)..",
+      "The auxiliary script implements data encryption on the malwares functions.",
+      "Next, the main script generates a unique user and system ID, and also collects information about the version of macOS in use."
+    ],
+    "sent_list": [
+      "the  $[dataobject]  with executable files inside the application package contains two python scripts: gjpwvvuud847dzqpybi (main) and goqwajdbnuv6 (auxiliary)..",
+      "the auxiliary script implements data encryption on the malwares functions.",
+      "next, the main script generates a unique user and system id, and also collects information about the version of macos in use."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "directory"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "These, delivered via email, contain savvy lures related to employees contact lists, technical documentation and medical analysis, to trick industrial employees into downloading the files.",
+      "The loader obfuscates itself using steganography, which is the practice of hiding electronic information inside images.",
+      "Steganography is used by actors to hide the fact that data is being exchanged, according to Kaspersky."
+    ],
+    "sent_list": [
+      "these, delivered via email, contain savvy lures related to employees contact lists, technical documentation and medical analysis, to trick industrial employees into downloading the files.",
+      "the loader obfuscates itself using steganography, which is the practice of hiding electronic information inside images.",
+      "steganography is used by actors to hide the fact that data is being  $[dataobject] d, according to kaspersky."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "exchange"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "A never-before-seen remote access trojan (RAT) has been discovered in a set of campaigns targeting the energy sector, with a slew of post-exploitation tools to log keystrokes, record footage from webcams and steal browser credentials.",
+      "Researchers called the malware PoetRAT due to various references to sonnets by English playwright William Shakespeare throughout the macros, which was embedded in malicious Word documents that were part of the campaign.",
+      "Further analysis of the RAT and its distribution reveals a carefully planned, highly targeted campaign against public and the private Azerbaijan sectors as well as SCADA systems."
+    ],
+    "sent_list": [
+      "a never-before-seen remote access trojan (rat) has been discovered in a set of campaigns targeting the energy sector, with a slew of post-exploitation tools to log  $[dataobject] s, record footage from webcams and steal browser credentials.",
+      "researchers called the malware poetrat due to various references to sonnets by english playwright william shakespeare throughout the macros, which was embedded in malicious word documents that were part of the campaign.",
+      "further analysis of the rat and its distribution reveals a carefully planned, highly targeted campaign against public and the private azerbaijan sectors as well as scada systems."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "keystroke"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "When the recipient clicks to download the document, a zip file called document.zip is presented, which contains a Visual Basic script dropper, explained Salvia.",
+      "The VBScript is highly obfuscated and encrypted.",
+      "Once executed, the script decrypts itself at run time and drops an executable file called ZjOexiPr.exe in C:\\Users\\Byte\\AppData\\Local\\Temp\\.."
+    ],
+    "sent_list": [
+      "when the recipient clicks to download the document, a zip file called  $[filename]  is presented, which contains a visual basic script dropper, explained salvia.",
+      "the vbscript is highly obfuscated and encrypted.",
+      "once executed, the script decrypts itself at run time and drops an executable file called  $[filename]  in  $[filepath] \\.."
+    ],
+    "ioc_vector": [
+      -0.125,
+      -0.125,
+      -0.125,
+      0.875,
+      -0.125,
+      -0.125,
+      0.375,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "document.zip",
+        "zjoexipr.exe"
+      ],
+      "filepath": [
+        "c:\\users\\byte\\appdata\\local\\temp"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "The DarkEyE samples have much overlap with GuLoader samples.",
+      "Both are written in VisualBasic, contain a shellcode encrypted with 4-byte XOR keys, and have the same payload decryption procedure  which explains the mistaken identity within Check Points antimalware analysis.",
+      "The ads for DarkEyE contain a website address to go to for more information: securitycode[.]eu."
+    ],
+    "sent_list": [
+      "the darkeye samples have much overlap with guloader samples.",
+      "both are written in visualbasic, contain a shellcode encrypted with 4-byte $[codemethod]  keys, and have the same payload decryption procedure  which explains the mistaken identity within check points antimalware analysis.",
+      "the ads for darkeye contain a website address to go to for more information:  $[fqdn] ."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666
+    ],
+    "ioc_normalized": {
+      "fqdn": [
+        "securitycode.eu"
+      ],
+      "codemethod": [
+        " xor"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "A Multistage Unfurling.",
+      "The sample starts its process with a JavaScript code in a text editor, containing URL-encoded data.",
+      "Once its decoded, we were able to uncover VBScript [Visual Basic Script] code, explained Chris Navarrete and Xiaopeng Zhang, in an analysis posted Wednesday."
+    ],
+    "sent_list": [
+      "a multistage unfurling.",
+      "the sample starts its process with a javascript code in a text editor, containing url-encoded data.",
+      "once its decoded, we were able to uncover vbscript [visual basic script] code, explained chris navarrete and xiaopeng zhang, in an analysis posted wednesday."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "If properly exploited, data could be stolen off of a printer, a medical devices behavior could be tampered with, or industrial control devices could be made to malfunction.",
+      "An attacker could hide malicious code within embedded devices for years.",
+      "One of the vulnerabilities could enable entry from outside into the network boundaries; and this is only a small taste of the potential risks, according to JSOF."
+    ],
+    "sent_list": [
+      "if properly exploited, data could be stolen off of a printer, a medical devices behavior could be tampered with, or industrial control devices could be made to malfunction.",
+      "an attacker could hide malicious code within embedded devices for years.",
+      "one of the vulnerabilities could enable entry from outside into the network boundaries; and this is only a small taste of the potential risks, according to jsof."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "The Attacks Topography.",
+      "The file that the adversary injected was a text file called cmd.txt  which contained an obfuscated PHP code.",
+      "Once executed, the code looks for the existence of Asterisk configuration files and write a new administrative user into them, which gave the attacker full control over the server."
+    ],
+    "sent_list": [
+      "the attacks topography.",
+      "the file that the adversary injected was a text file called  $[filename]   which contained an obfuscated php code.",
+      "once executed, the code looks for the existence of asterisk configuration files and write a new administrative user into them, which gave the attacker full control over the server."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "cmd.txt"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "The PHP web shell was protected by a hardcoded password, also used in a similar PHP file.",
+      "But instead of the hard-coded string, the PHP had an embedded URL inside it, from which the password had to be extracted, according to the paper.",
+      "From there, they were able to track the identity of the attacker to a person who, according to his LinkedIn profile, is a security enthusiast who lives in the Gaza Strip and works for the Palestinian Ministry of Telecommunications."
+    ],
+    "sent_list": [
+      "the php web shell was protected by a hardcoded  $[dataobject] , also used in a similar php file.",
+      "but instead of the hard-coded string, the php had an embedded url inside it, from which the  $[dataobject]  had to be extracted, according to the paper.",
+      "from there, they were able to track the identity of the attacker to a person who, according to his linkedin profile, is a security enthusiast who lives in the gaza strip and works for the palestinian ministry of telecommunications."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "password"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "When the shellcode within rebare.dat is executed, it in turn executes a RAT installer file named rescure.dat, according to the analysis.",
+      "This is a XOR-encrypted DLL file that installs a custom application, responsor.dat, which installs the keylogger driver and manages the RAT functionality.",
+      "It also starts the RAT when the rescure.dat function startModule is called."
+    ],
+    "sent_list": [
+      "when the shellcode within rebare.dat is executed, it in turn executes a rat installer file named rescure.dat, according to the analysis.",
+      "this is a $[codemethod] -encrypted dll file that installs a custom application, responsor.dat, which installs the  $[dataobject]  driver and manages the rat functionality.",
+      "it also starts the rat when the rescure.dat function startmodule is called."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      0.8333333333333334
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " xor"
+      ],
+      "dataobject": [
+        "keylogger"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "We identified FlowCloud communication with the IP 188.131.233[.]27.",
+      "The requests and responses are composed of multiple encrypted headers (using XORs and RORs) and TEA encrypted data using a key generation scheme involving a hardcoded string of random characters and MD5 hashing.",
+      "The plaintext data is compressed using ZLIB and serialized using Googles Protocol Buffers.."
+    ],
+    "sent_list": [
+      "we identified flowcloud communication with the ip  $[ip] .",
+      "the requests and responses are composed of multiple encrypted headers (using $[codemethod] s and $[codemethod] s) and tea encrypted data using a key generation scheme involving a hardcoded string of random characters and md5 hashing.",
+      "the plaintext data is compressed using zlib and serialized using googles protocol buffers.."
+    ],
+    "ioc_vector": [
+      0.375,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      0.875,
+      -0.125,
+      -0.125
+    ],
+    "ioc_normalized": {
+      "ip": [
+        "188.131.233.27"
+      ],
+      "codemethod": [
+        " xor",
+        " ror"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "Now an attacker can remotely trigger Google Home to load the malicious app in the LAN.",
+      "Next, Google Home is forced to visit a malicious URL via an embedded Chrome browser- triggering the Magellan attack.",
+      "The good news is, according researchers, there are no indications that Magellan has been abused in the wild."
+    ],
+    "sent_list": [
+      "now an attacker can remotely trigger google home to load the malicious app in the lan.",
+      "next, google home is forced to visit a malicious url via an embedded chrome browser- triggering the magellan attack.",
+      "the good news is, according researchers, there are no indications that magellan has been abused in the wild."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "Many of these samples appear to be designed specifically to attempt to slip into the Play Store undetected and are not seen elsewhere..",
+      "Joker apps have been seen trying to hide strings from analysis engines via several different methods  including standard and custom encryption.",
+      "Known encryption techniques used by Joker include using AES, Blowfish and DES as well as combinations of these to encrypt their strings; on the custom front, it has used basic XOR encryption, nested XOR and custom key-derivation methods."
+    ],
+    "sent_list": [
+      "many of these samples appear to be designed specifically to attempt to slip into the play store undetected and are not seen elsewhere..",
+      "joker apps have been seen trying to hide strings from analysis engines via several different methods  including standard and custom encryption.",
+      "known encryption techniques used by joker include using $[codemethod] , blowfish and $[codemethod] as well as combinations of these to encrypt their strings; on the custom front, it has used basic $[codemethod]  encryption, nested $[codemethod]  and custom key-derivation methods."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " aes",
+        " xor",
+        " des "
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "Joker apps have been seen trying to hide strings from analysis engines via several different methods  including standard and custom encryption.",
+      "Known encryption techniques used by Joker include using AES, Blowfish and DES as well as combinations of these to encrypt their strings; on the custom front, it has used basic XOR encryption, nested XOR and custom key-derivation methods.",
+      "Some variants have gone so far as to use a different key for the strings of each class, the researchers said."
+    ],
+    "sent_list": [
+      "joker apps have been seen trying to hide strings from analysis engines via several different methods  including standard and custom encryption.",
+      "known encryption techniques used by joker include using $[codemethod] , blowfish and $[codemethod] as well as combinations of these to encrypt their strings; on the custom front, it has used basic $[codemethod]  encryption, nested $[codemethod]  and custom key-derivation methods.",
+      "some variants have gone so far as to use a different key for the strings of each class, the researchers said."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " aes",
+        " xor",
+        " des "
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "Some variants have gone so far as to use a different key for the strings of each class, the researchers said.",
+      "Those encrypted strings however can tip off analysts that theyre trying to hide something, so Joker also used unencrypted strings that are hidden in other ways  such as breaking them up into pieces to prevent automated string-matching by antivirus and other security tools.",
+      "Substrings are sometimes scattered throughout the code, retrieved from static variables and method calls."
+    ],
+    "sent_list": [
+      "some variants have gone so far as to use a different key for the strings of each class, the researchers said.",
+      "those encrypted strings however can tip off analysts that theyre trying to hide something, so joker also used unencrypted strings that are hidden in other ways  such as breaking them up into pieces to prevent automated string-matching by antivirus and other security tools.",
+      "substrings are sometimes scattered throughout the code, retrieved from static variables and method calls."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  }
+]

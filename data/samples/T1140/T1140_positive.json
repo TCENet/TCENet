@@ -35,5 +35,579 @@
         " base64"
       ]
     }
+  },
+  {
+    "origin_list": [
+      "All the malicious files we encountered were heavily obfuscated, which complicated their manual analysis.",
+      "We took the sample 263dc85de7ec717e8940b1ccdd6ee119 and deobfuscated its strings, classes, methods, and fields.",
+      "Heres how the file looked before deobfuscation:."
+    ],
+    "sent_list": [
+      "all the malicious files we encountered were heavily obfuscated, which complicated their manual analysis.",
+      "we took the sample  $[hash]  and deobfuscated its strings, classes, methods, and fields.",
+      "heres how the file looked before deobfuscation:."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "hash": [
+        "263dc85de7ec717e8940b1ccdd6ee119"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "We took the sample 263dc85de7ec717e8940b1ccdd6ee119 and deobfuscated its strings, classes, methods, and fields.",
+      "Heres how the file looked before deobfuscation:.",
+      "Sample before deobfuscation."
+    ],
+    "sent_list": [
+      "we took the sample  $[hash]  and deobfuscated its strings, classes, methods, and fields.",
+      "heres how the file looked before deobfuscation:.",
+      "sample before deobfuscation."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "hash": [
+        "263dc85de7ec717e8940b1ccdd6ee119"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "Heres how the file looked before deobfuscation:.",
+      "Sample before deobfuscation.",
+      "InstallUtil.exe allows file execution to start not from the .NET assembly entry point: execution begins from a class inherited from System.Configuration.Install.Installer."
+    ],
+    "sent_list": [
+      "heres how the file looked before deobfuscation:.",
+      "sample before deobfuscation.",
+      " $[filename]  allows file execution to start not from the .net assembly entry point: execution begins from a class inherited from system.configuration.install.installer."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "installutil.exe"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "At the first iteration, the full path to the RegAsm.exe utility from .NET Framework is retrieved;.",
+      "A chain of nested methods is called with a view to decoding strings from Base64 that are stored in another class and unpacking the resulting array using the SevenZipExtractor library.",
+      "As a result, we get an array that is the remote administration tool NanoCore Client;."
+    ],
+    "sent_list": [
+      "at the first iteration, the full path to the  $[filename]  utility from .net framework is retrieved;.",
+      "a chain of nested methods is called with a view to decoding strings from $[codemethod]  that are stored in another class and unpacking the resulting array using the sevenzipextractor library.",
+      "as a result, we get an array that is the remote administration tool nanocore client;."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "regasm.exe"
+      ],
+      "codemethod": [
+        " base64"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "The bot begins execution by unraveling code encrypted with RC4 within Thread Local Storage (TLS) callback functions.",
+      "To find the starting location of the decrypted code, it searches for the PUSH EBP assembly instruction, which is 0x55.",
+      "This is a smart approach as most reverse engineers will place a software breakpoint at this location to begin executing the decrypted code."
+    ],
+    "sent_list": [
+      "the bot begins execution by unraveling code encrypted with $[codemethod]  within thread local storage (tls) callback functions.",
+      "to find the starting location of the decrypted code, it searches for the push ebp assembly instruction, which is 0x55.",
+      "this is a smart approach as most reverse engineers will place a software breakpoint at this location to begin executing the decrypted code."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " rc4"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "To find the starting location of the decrypted code, it searches for the PUSH EBP assembly instruction, which is 0x55.",
+      "This is a smart approach as most reverse engineers will place a software breakpoint at this location to begin executing the decrypted code.",
+      "However, whenever a software breakpoint is placed, the instruction is actually replaced with an INT3 (0xCC), and therefore the malware wouldnt continue to execute as intended."
+    ],
+    "sent_list": [
+      "to find the starting location of the decrypted code, it searches for the push ebp assembly instruction, which is 0x55.",
+      "this is a smart approach as most reverse engineers will place a software breakpoint at this location to begin executing the decrypted code.",
+      "however, whenever a software breakpoint is placed, the instruction is actually replaced with an int3 (0xcc), and therefore the malware wouldnt continue to execute as intended."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "Durando said that it downloads the webpage of a photo-less Instagram account.",
+      "It then extracts the biography field of this account and decodes it using Base64.",
+      "After the connection to the server is started, the malware proceeds to fingerprint the device, sending the IMEI, IMSI\u00a0(International Mobile Subscriber Identity) and phone number to the attackers."
+    ],
+    "sent_list": [
+      "durando said that it downloads the webpage of a photo-less instagram account.",
+      "it then extracts the biography field of this account and decodes it using $[codemethod] .",
+      "after the connection to the server is started, the malware proceeds to fingerprint the device, sending the imei, imsi\u00a0(international mobile subscriber identity) and phone number to the attackers."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " base64"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "After running the Trojan further we discover the data is actually an encrypted PE file, which is then decrypted using a custom XOR routine, one DWORD at a time (Note: a DWORD is equal to 4 bytes).",
+      "The decryption routine is as follows: (Note: The ^ character represents a logical XOR operation).",
+      "x ^ y = z."
+    ],
+    "sent_list": [
+      "after running the trojan further we discover the data is actually an encrypted pe file, which is then decrypted using a custom $[codemethod]  routine, one dword at a time (note: a dword is equal to 4 bytes).",
+      "the decryption routine is as follows: (note: the ^ character represents a logical $[codemethod]  operation).",
+      "x ^ y = z."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " xor"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "However, just like all the other code out there, the exploit code returns into the middle of an instruction to custom make a jmp esp instruction within mscomctl.ocx and pivot into its shellcode stub.",
+      "The stub itelf is fairly common, setting up the stack and then decoding the remaining 2k bytes of shellcode blob with an xor 0x70 loop  another simple obfuscation trick to stymie static analysis.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "however, just like all the other code out there, the exploit code returns into the middle of an instruction to custom make a jmp esp instruction within mscomctl.ocx and pivot into its shellcode stub.",
+      "the stub itelf is fairly common, setting up the stack and then decoding the remaining 2k bytes of shellcode blob with an $[codemethod]  0x70 loop  another simple obfuscation trick to stymie static analysis.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " xor"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "These are unusual calls to implement in order to load libraries and locate functions without using the commonly used API calls.",
+      "When the exploit finally creates Ax.tmp (f3219d66e36924ded709fe0da1d5d2c8  Kaspersky Backdoor.Win32.Agent.cjqi) in %temp%, it decrypts the file content in memory with a simple xor  ror loop prior to writing the file out to disk.",
+      "These simple loops help to hide malicious executable content without appearing too suspicious."
+    ],
+    "sent_list": [
+      "these are unusual calls to implement in order to load libraries and locate functions without using the commonly used api calls.",
+      "when the exploit finally creates  $[filename]  ( $[hash]   kaspersky backdoor.win32.agent.cjqi) in %temp%, it decrypts the file content in memory with a simple xor  $[codemethod]  loop prior to writing the file out to disk.",
+      "these simple loops help to hide malicious executable content without appearing too suspicious."
+    ],
+    "ioc_vector": [
+      -0.25,
+      -0.25,
+      -0.25,
+      0.75,
+      -0.25,
+      0.75,
+      -0.25,
+      -0.25,
+      -0.25,
+      0.75,
+      -0.25,
+      -0.25
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "ax.tmp"
+      ],
+      "hash": [
+        "f3219d66e36924ded709fe0da1d5d2c8"
+      ],
+      "codemethod": [
+        " ror"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "The library will decode this answer and xor it with a 0x66 key.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "$[para].",
+      "the library will decode this answer and $[codemethod]  it with a 0x66 key.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " xor"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "The payload stuff is kept in encrypted form in the file body.",
+      "After decryption, this stuff looks like one of the usual PlugX payload files, those with easily recognizable shellcode at the beginning:.",
+      "Decrypted payload stuff."
+    ],
+    "sent_list": [
+      "the payload stuff is kept in encrypted form in the file body.",
+      "after decryption, this stuff looks like one of the usual plugx payload files, those with easily recognizable shellcode at the beginning:.",
+      "decrypted payload stuff."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "After decryption, this stuff looks like one of the usual PlugX payload files, those with easily recognizable shellcode at the beginning:.",
+      "Decrypted payload stuff.",
+      "The algorithm used to encrypt the payload resource is RC4."
+    ],
+    "sent_list": [
+      "after decryption, this stuff looks like one of the usual plugx payload files, those with easily recognizable shellcode at the beginning:.",
+      "decrypted payload stuff.",
+      "the algorithm used to encrypt the payload resource is $[codemethod] ."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " rc4"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "The algorithm used to encrypt the payload resource is RC4.",
+      "And finally (and this is what impelled us to write this blogpost)  the RC4 key for the resource decryption  SORRY.i_have_to_do_this.",
+      "Apologetic RC4 key."
+    ],
+    "sent_list": [
+      "the algorithm used to encrypt the payload resource is $[codemethod] .",
+      "and finally (and this is what impelled us to write this blogpost)  the $[codemethod]  key for the resource decryption  sorry.i_have_to_do_this.",
+      "apologetic $[codemethod]  key."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " rc4"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "Part of Trojan code to delete AoC (advice of charge) messages.",
+      "After analyzing these Trojans, I found that some of them (MD5 A93D3C727B970082C682895FEA4DB77B) also contain a different functionality  to decrypt and load (execute) additional executable files.",
+      "This functionality is detected as Trojan-Dropper.AndroidOS.Ubsod."
+    ],
+    "sent_list": [
+      "part of trojan code to delete aoc (advice of charge) messages.",
+      "after analyzing these trojans, i found that some of them (md5  $[hash] ) also contain a different functionality  to decrypt and load (execute) additional executable files.",
+      "this functionality is detected as trojan-dropper.androidos.ubsod."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "hash": [
+        "a93d3c727b970082c682895fea4db77b"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "After installation, it acts like a useful app but with one difference  it loads a malicious library.",
+      "This library decrypts and loads files from the assets folder of the installation package.",
+      "These files decrypt and load another file from the assets folder which contains the main malicious functionality."
+    ],
+    "sent_list": [
+      "after installation, it acts like a useful app but with one difference  it loads a malicious library.",
+      "this library decrypts and loads files from the assets folder of the installation package.",
+      "these files decrypt and load another file from the assets folder which contains the main malicious functionality."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "This library decrypts and loads files from the assets folder of the installation package.",
+      "These files decrypt and load another file from the assets folder which contains the main malicious functionality.",
+      "It decrypts (yep, decryption again) JS files."
+    ],
+    "sent_list": [
+      "this library decrypts and loads files from the assets folder of the installation package.",
+      "these files decrypt and load another file from the assets folder which contains the main malicious functionality.",
+      "it decrypts (yep, decryption again) js files."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "These files decrypt and load another file from the assets folder which contains the main malicious functionality.",
+      "It decrypts (yep, decryption again) JS files.",
+      "Using these JS files it can bypass captcha forms and click on web-pages with WAP billing."
+    ],
+    "sent_list": [
+      "these files decrypt and load another file from the assets folder which contains the main malicious functionality.",
+      "it decrypts (yep, decryption again) js files.",
+      "using these js files it can bypass captcha forms and click on web-pages with wap billing."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "While users see a Battery Master interface the Trojan is trying to steal money.",
+      "The files with the main functionality (which was decrypted) contain URLs with WAP-billings.",
+      "I was able to find only two different versions of this file  one version contains Indian links, another  Russian links."
+    ],
+    "sent_list": [
+      "while users see a battery master interface the trojan is trying to steal money.",
+      "the files with the main functionality (which was decrypted) contain urls with wap-billings.",
+      "i was able to find only two different versions of this file  one version contains indian links, another  russian links."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
   }
 ]

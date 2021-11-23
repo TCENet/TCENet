@@ -11,3 +11,6 @@
 
 # Examples
 * The examples folder provides a STIX 2.1 TTP intelligence example and a Sigma detection rule example. You can use the TTP intelligence JSON in this STIX 2.1 visualization website:https://oasis-open.github.io/cti-stix-visualization/.
+
+# Data samples
+* We have made some dataset training data publicly available. We will open the full dataset after the paper is officially accepted

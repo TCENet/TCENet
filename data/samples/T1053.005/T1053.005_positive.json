@@ -32,5 +32,597 @@
         "c:\\windows\\system32"
       ]
     }
+  },
+  {
+    "origin_list": [
+      "let’s go back to our first file, “maket dizayna debitovoy korp karty.chm”.",
+      "it creates a task and then deletes it.",
+      "it means we can hardly find task file under c:\\windows\\system32\\tasks, same can be said about vscs, as it’s created, ran and deleted immediatelly."
+    ],
+    "sent_list": [
+      "let’s go back to our first file, “maket dizayna debitovoy korp  $[filename] ”.",
+      "it creates a task and then deletes it.",
+      "it means we can hardly find task file under  $[filepath] , same can be said about vscs, as it’s created, ran and deleted immediatelly."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "karty.chm"
+      ],
+      "filepath": [
+        "c:\\windows\\system32\\tasks"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "it creates a task and then deletes it.",
+      "it means we can hardly find task file under c:\\windows\\system32\\tasks, same can be said about vscs, as it’s created, ran and deleted immediatelly.",
+      "but it can be a good idea to check microsoft-windows-taskscheduler%4operational.evtx, as it records everything regarding scheduled tasks, here is a good example."
+    ],
+    "sent_list": [
+      "it creates a task and then deletes it.",
+      "it means we can hardly find task file under  $[filepath] , same can be said about vscs, as it’s created, ran and deleted immediatelly.",
+      "but it can be a good idea to check microsoft-windows-taskscheduler%4operational.evtx, as it records everything regarding scheduled tasks, here is a good example."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "filepath": [
+        "c:\\windows\\system32\\tasks"
+      ]
+    }
+  },
+   {
+    "origin_list": [
+      "$[para].",
+      "spear found that el machete relied on two primary means to achieve persistence: scheduled tasks and the startup folder.",
+      "scheduled tasks commonly used ‘hd_audio’, ‘java_upda’, or ‘microsoft_up’ as the task name and generally pointed to one of the executables below."
+    ],
+    "sent_list": [
+      "$[para].",
+      "spear found that el machete relied on two primary means to achieve persistence: scheduled tasks and the startup folder.",
+      "scheduled tasks commonly used ‘hd_audio’, ‘java_upda’, or ‘microsoft_up’ as the task name and generally pointed to one of the executables below."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "spear found that el machete relied on two primary means to achieve persistence: scheduled tasks and the startup folder.",
+      "scheduled tasks commonly used ‘hd_audio’, ‘java_upda’, or ‘microsoft_up’ as the task name and generally pointed to one of the executables below.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "spear found that el machete relied on two primary means to achieve persistence: scheduled tasks and the startup folder.",
+      "scheduled tasks commonly used ‘hd_audio’, ‘java_upda’, or ‘microsoft_up’ as the task name and generally pointed to one of the executables below.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "It may also steal passwords saved by the Chrome browser.",
+      "A spreader script that lists computers connected to the domain, and tries to open a share on each of them to copy a binary and create a remote scheduled task.",
+      "A home-made keylogger."
+    ],
+    "sent_list": [
+      "it may also steal  $[dataobject] s saved by the chrome browser.",
+      "a spreader script that lists computers connected to the domain, and tries to open a share on each of them to copy a binary and create a remote scheduled task.",
+      "a home-made  $[dataobject] ."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "keylogger",
+        "password"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "They most likely used the Qt Creator IDE in a Windows environment.",
+      "The malware utilizes several persistence mechanisms including scheduled tasks, Userinit and Run registry keys in the HKLM hive.",
+      "XOR and RC4 encryption is used with quite long unique keys for different samples."
+    ],
+    "sent_list": [
+      "they most likely used the qt creator ide in a windows environment.",
+      "the malware utilizes several persistence mechanisms including scheduled tasks, userinit and run registry keys in the hklm hive.",
+      "xor and $[codemethod]  encryption is used with quite long unique keys for different samples."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "codemethod": [
+        " rc4"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "Persistence.",
+      "Persistence modules are based on scheduled tasks and system registry.",
+      "Mechanisms vary for different OS versions."
+    ],
+    "sent_list": [
+      "persistence.",
+      "persistence modules are based on scheduled tasks and system registry.",
+      "mechanisms vary for different os versions."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "Mechanisms vary for different OS versions.",
+      "In the case of old Windows versions like XP, main module events.exe runs an edited XPTask.vbs Microsoft sample script to create a weekly scheduled task for itself.",
+      "For newer operating systems, events.exe creates task.xml as follows:."
+    ],
+    "sent_list": [
+      "mechanisms vary for different os versions.",
+      "in the case of old windows versions like xp, main module  $[filename]  runs an edited  $[filename]  microsoft sample script to create a weekly scheduled task for itself.",
+      "for newer operating systems,  $[filename]  creates task.xml as follows:."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "events.exe",
+        "xptask.vbs"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "In the case of old Windows versions like XP, main module events.exe runs an edited XPTask.vbs Microsoft sample script to create a weekly scheduled task for itself.",
+      "For newer operating systems, events.exe creates task.xml as follows:.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "in the case of old windows versions like xp, main module  $[filename]  runs an edited  $[filename]  microsoft sample script to create a weekly scheduled task for itself.",
+      "for newer operating systems,  $[filename]  creates task.xml as follows:.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "events.exe",
+        "xptask.vbs"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "Then it creates a Windows scheduled task using the following command:.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "$[para].",
+      "then it creates a windows scheduled task using the following command:.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "schtasks.exe /create /TN \\\"Events\\\\CacheTask_<user_name_here>\" /XML \\\"<event_cache_dir_path>t /F\".",
+      "$[para]."
+    ],
+    "sent_list": [
+      "$[para].",
+      " $[filename]  /create /tn \\\"events\\ $[filepath] <user_name_here>\" /xml \\\"<event_cache_dir_path>t /f\".",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "schtasks.exe"
+      ],
+      "filepath": [
+        "\\cachetask_"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "Local\\{Temp-00-aa-123-mr-bbb}.",
+      "Scheduled task.",
+      "CacheTask_<user_name_here>."
+    ],
+    "sent_list": [
+      "local\\{temp-00-aa-123-mr-bbb}.",
+      "scheduled task.",
+      "cachetask_<user_name_here>."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "the malware also contains an embedded .net wrapper dll for creating and managing scheduled tasks on windows systems.",
+      "the file, named microsoft.win32.taskscheduler.dll, is digitally signed by a certificate from airvpn."
+    ],
+    "sent_list": [
+      "$[para].",
+      "the malware also contains an embedded .net wrapper dll for creating and managing scheduled tasks on windows systems.",
+      "the file, named  $[filename] , is digitally signed by a certificate from airvpn."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "microsoft.win32.taskscheduler.dll"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "this dll is used to create a scheduled task that points to the quasarrat binary, microsoft_network.exe, allowing it to remain persistent after reboot.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "$[para].",
+      "this dll is used to create a scheduled task that points to the quasarrat binary,  $[filename] , allowing it to remain persistent after reboot.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "microsoft_network.exe"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "as seen in the image above, the quasarrat scheduled task is named microsoft_security_task and runs at 12:00 am each day.",
+      "once the task is triggered, it will then repeat every 5 minutes for 60 days."
+    ],
+    "sent_list": [
+      "$[para].",
+      "as seen in the image above, the quasarrat scheduled task is named microsoft_security_task and runs at 12:00 am each day.",
+      "once the task is triggered, it will then repeat every 5 minutes for 60 days."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "Looking at the running processes, it’s clear to see what the problem is and why the CPU has hit 100% usage.",
+      "At the same time, BrowserDefendert now wants to become a scheduled task.",
+      "Well, it’s now nearly 22.00 and the setup has still not finished (90% complete) and appears to be hung."
+    ],
+    "sent_list": [
+      "looking at the running processes, it’s clear to see what the problem is and why the cpu has hit 100% usage.",
+      "at the same time, browserdefendert now wants to become a scheduled task.",
+      "well, it’s now nearly 22.00 and the setup has still not finished (90% complete) and appears to be hung."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "Ads are observed to be marked as “Ads by SafeSoft Protector”, “Powered by SafeSoft Protector”, “Brought to you by SafeSoft Protector”, and “You received a premium offer from SafeSoft Protector”.",
+      "This adware also creates the following tasks in Windows Task Scheduler:.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "ads are observed to be marked as “ads by safesoft protector”, “powered by safesoft protector”, “brought to you by safesoft protector”, and “you received a premium offer from safesoft protector”.",
+      "this adware also creates the following tasks in windows task scheduler:.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+   {
+    "origin_list": [
+      "Next, mshta.exe is used to reach out to plain-text sharing site Pastebin.com to retrieve an encoded script.",
+      "“[It] creates a scheduled task for mshta to reach out to a Pastebin url every 60 minutes.",
+      "This is where an encoded script is located and the url it retrieves dictates whether the recipient ultimately receives the Lokibot or Azorult payload in our samples,” wrote the researcher."
+    ],
+    "sent_list": [
+      "next,  $[filename]  is used to reach out to plain-text sharing site  $[fqdn]  to retrieve an encoded script.",
+      "“[it] creates a scheduled task for mshta to reach out to a pastebin url every 60 minutes.",
+      "this is where an encoded script is located and the url it retrieves dictates whether the recipient ultimately receives the lokibot or azorult payload in our samples,” wrote the researcher."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      0.8333333333333334,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666
+    ],
+    "ioc_normalized": {
+      "fqdn": [
+        "pastebin.com"
+      ],
+      "filename": [
+        "mshta.exe"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "the client script itself is stored in the registry under the key‘serverurl’,and a scheduled task is set up to detonate a file stored as an alternate data stream, which is an ntfs file attribute usedto hide the file responsible for detonating the client.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "$[para].",
+      "the client script itself is stored in the registry under the key‘serverurl’,and a scheduled task is set up to detonate a file stored as an alternate data stream, which is an ntfs file attribute usedto hide the file responsible for detonating the client.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "the client script also has the functionality to detonate what it  calls an‘execjob’; these jobs are referredto as tasks internally and are stored as ads objects of a hardcoded filename.",
+      "they are then detonatedusing ‘wmic process call create’ in a scheduled task with the name ‘perfwatson_<taskname>’.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "the client script also has the functionality to detonate what it  calls an‘execjob’; these jobs are referredto as tasks internally and are stored as ads objects of a hardcoded filename.",
+      "they are then detonatedusing ‘wmic process call create’ in a scheduled task with the name ‘perfwatson_<taskname>’.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
   }
 ]

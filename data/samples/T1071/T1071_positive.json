@@ -30,5 +30,614 @@
         "smtp"
       ]
     }
+  },
+  {
+    "origin_list": [
+      "it has historically leveraged legitimate third-party websites to host the malwares command and control (c2) information, acting as dead drops.",
+      "after the c2 information has been collected, badnews leverages http for communication with the remote servers.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "it has historically leveraged legitimate third-party websites to host the malwares command and control (c2) information, acting as dead drops.",
+      "after the c2 information has been collected, badnews leverages  $[protocol]  for communication with the remote servers.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      -0.08333333333333333,
+      0.9166666666666666,
+      -0.08333333333333333
+    ],
+    "ioc_normalized": {
+      "protocol": [
+        "http"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "weve observed modifications to how the malware obtains its (c2) server information, as well as modifications to the c2 communication.",
+      "these changes to badnews, as well as the use of recent eps-based exploits, demonstrate that the group are actively updating their toolsets in efforts to stay ahead of the security community."
+    ],
+    "sent_list": [
+      "$[para].",
+      "weve observed modifications to how the malware obtains its (c2) server information, as well as modifications to the c2 communication.",
+      "these changes to badnews, as well as the use of recent eps-based exploits, demonstrate that the group are actively updating their toolsets in efforts to stay ahead of the security community."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "much of badnews has remained consistent from when it was originally discussed by forcepoint in august 2016. additionally, recent analysis by trend micro notes some minor changes during 2017. to briefly recap, the badnews malware family acts as a backdoor, with communication occurring over http.",
+      "a number of commands are provided to the attackers, including the ability to download and execute additional information, upload documents of interest, and take screenshots of the desktop."
+    ],
+    "sent_list": [
+      "$[para].",
+      "much of badnews has remained consistent from when it was originally discussed by forcepoint in august 2016. additionally, recent analysis by trend micro notes some minor changes during 2017. to briefly recap, the badnews malware family acts as a backdoor, with communication occurring over  $[protocol] .",
+      "a number of commands are provided to the attackers, including the ability to download and execute additional information, upload documents of interest, and take screenshots of the  $[dataobject] ."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      0.8333333333333334
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "desktop"
+      ],
+      "protocol": [
+        "http"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "c2 communication is also updated from prior versions, with the following commands now supported by badnews.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "$[para].",
+      "c2 communication is also updated from prior versions, with the following commands now supported by badnews.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "during c2 communications, badnews will communicate to the c2 previously identified via http.",
+      "the following hardcoded uri is used for normal communication with the c2 (note the additional forward slashes): //e3e7e71a0b28b5e96cc492e636722f73//4svkaovu3d//abdyot0nxyg.php."
+    ],
+    "sent_list": [
+      "$[para].",
+      "during c2 communications, badnews will communicate to the c2 previously identified via  $[protocol] .",
+      "the following hardcoded uri is used for normal communication with the c2 (note the additional forward slashes): // $[hash] //4svkaovu3d// $[filename] ."
+    ],
+    "ioc_vector": [
+      -0.25,
+      -0.25,
+      -0.25,
+      0.75,
+      -0.25,
+      0.75,
+      -0.25,
+      -0.25,
+      -0.25,
+      -0.25,
+      0.75,
+      -0.25
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "abdyot0nxyg.php"
+      ],
+      "hash": [
+        "e3e7e71a0b28b5e96cc492e636722f73"
+      ],
+      "protocol": [
+        "http"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "during c2 communications, badnews will communicate to the c2 previously identified via http.",
+      "the following hardcoded uri is used for normal communication with the c2 (note the additional forward slashes): //e3e7e71a0b28b5e96cc492e636722f73//4svkaovu3d//abdyot0nxyg.php.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "during c2 communications, badnews will communicate to the c2 previously identified via  $[protocol] .",
+      "the following hardcoded uri is used for normal communication with the c2 (note the additional forward slashes): // $[hash] //4svkaovu3d// $[filename] .",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      -0.25,
+      -0.25,
+      -0.25,
+      0.75,
+      -0.25,
+      0.75,
+      -0.25,
+      -0.25,
+      -0.25,
+      -0.25,
+      0.75,
+      -0.25
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "abdyot0nxyg.php"
+      ],
+      "hash": [
+        "e3e7e71a0b28b5e96cc492e636722f73"
+      ],
+      "protocol": [
+        "http"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "one of the malware families tied to this group, badnews, continues to be updated both in how it uses dead drop resolvers, as well as how it communicates with a remote c2 server.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "$[para].",
+      "one of the malware families tied to this group, badnews, continues to be updated both in how it uses dead drop resolvers, as well as how it communicates with a remote c2 server.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "This module scans the  local network, looks for all computers listening on ports related to OPC/SCADA (Supervisory  Control and Data Acquisition) software, and tries to connect to such hosts in  order to identify which potential OPC/SCADA system is running.",
+      "It then transmits  all the data it finds to the Command-and-Control (C2) servers used by the  attackers to manage the campaign.",
+      "While analysing the code, we looked for clues that  might point to the identity of the attackers."
+    ],
+    "sent_list": [
+      "this module scans the  local network, looks for all computers listening on ports related to opc/scada (supervisory  control and data acquisition) software, and tries to connect to such hosts in  order to identify which potential opc/scada system is running.",
+      "it then transmits  all the data it finds to the command-and-control (c2) servers used by the  attackers to manage the campaign.",
+      "while analysing the code, we looked for clues that  might point to the identity of the attackers."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "in the timer function, it captures screenshots of the victims screen and then uses the api graphics::copyfromscreen to grab the screenshots and saves them into the file %appdata%\\screenshot\\screen.jpeg.",
+      "it later encodes the file screen.jpeg with base64 and then sends it to its c&c server using the command screenshots.",
+      "$[para]."
+    ],
+    "sent_list": [
+      "in the timer function, it captures screenshots of the victims screen and then uses the api graphics $[ip]  $[ip] copyfromscreen to grab the screenshots and saves them into the file  $[filepath] .",
+      "it later encodes the file screen.jpeg with $[codemethod]  and then sends it to its c&c server using the command screenshots.",
+      "$[para]."
+    ],
+    "ioc_vector": [
+      0.75,
+      -0.25,
+      -0.25,
+      -0.25,
+      -0.25,
+      -0.25,
+      0.75,
+      -0.25,
+      -0.25,
+      0.75,
+      -0.25,
+      -0.25
+    ],
+    "ioc_normalized": {
+      "ip": [
+        ":"
+      ],
+      "filepath": [
+        "%appdata%\\screenshot\\screen.jpeg"
+      ],
+      "codemethod": [
+        " base64"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "Once the computer is infected, the Epic Turla backdoor  (known also as WorldCupSec, TadjMakhal, Wipbot and Tadvig) immediately  connects to the C2 server to send a pack containing the victims system  information.",
+      "Based on the summary  information sent to the C2 server, the attackers deliver pre-configured batch  files containing a series of commands to be executed on the infected computer.",
+      "The attackers also upload custom lateral  movement tools (including a specific keylogger and RAR archiver), as well as standard  utilities such as a DNS query tool from Microsoft."
+    ],
+    "sent_list": [
+      "once the computer is infected, the epic turla backdoor  (known also as worldcupsec, tadjmakhal, wipbot and tadvig) immediately  connects to the c2 server to send a pack containing the victims system  information.",
+      "based on the summary  information sent to the c2 server, the attackers deliver pre-configured batch  files containing a series of commands to be executed on the infected computer.",
+      "the attackers also upload custom lateral  movement tools (including a specific  $[dataobject]  and rar archiver), as well as standard  utilities such as a  $[protocol]  query tool from microsoft."
+    ],
+    "ioc_vector": [
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      -0.16666666666666666,
+      0.8333333333333334,
+      0.8333333333333334
+    ],
+    "ioc_normalized": {
+      "dataobject": [
+        "keylogger"
+      ],
+      "protocol": [
+        "dns"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "It is used to deploy a more sophisticated backdoor known as the Cobra/Carbon  system (named Pfinet by some anti-malware products).",
+      "After some time, the attackers went further,  using the Epic Turla implant to update the Carbon configuration file with a  different set of C2 servers.",
+      "The unique  knowledge to operate these two backdoors indicates a clear and direct  connection between them:\u00a0 one is used to  gain a foothold and validate the high-profile victim."
+    ],
+    "sent_list": [
+      "it is used to deploy a more sophisticated backdoor known as the cobra/carbon  system (named pfinet by some anti-malware products).",
+      "after some time, the attackers went further,  using the epic turla implant to update the carbon configuration file with a  different set of c2 servers.",
+      "the unique  knowledge to operate these two backdoors indicates a clear and direct  connection between them:\u00a0 one is used to  gain a foothold and validate the high-profile victim."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "The attackers use spear-phishing e-mails to lure their victims:\u00a0 e-mails include a Microsoft Word document  that contains the CVE-2012-0158 exploit.",
+      "This drops the main module (net.exe) onto the computer, which in turn  installs a number of other files, including the main C2 module.",
+      "This module is registered as a service  (Windowsupdata) by means of a Windows batch file called dot.bat."
+    ],
+    "sent_list": [
+      "the attackers use spear-phishing e-mails to lure their victims:\u00a0 e-mails include a microsoft word document  that contains the  $[cve]  exploit.",
+      "this drops the main module ( $[filename] ) onto the computer, which in turn  installs a number of other files, including the main c2 module.",
+      "this module is registered as a service  (windowsupdata) by means of a windows batch file called  $[filename] ."
+    ],
+    "ioc_vector": [
+      -0.125,
+      -0.125,
+      -0.125,
+      0.875,
+      -0.125,
+      -0.125,
+      -0.125,
+      -0.125,
+      0.375,
+      -0.125,
+      -0.125,
+      -0.125
+    ],
+    "ioc_normalized": {
+      "filename": [
+        "..bat",
+        "net.exe"
+      ],
+      "cve": [
+        "CVE-2012-0158"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "The attacks have also been seen in  Turkey, Saudi Arabia, Lebanon, Palestine, United Arab Emirates, Israel,  Morocco, France and the United States.",
+      "We were able to track the C2 servers of the  attackers to IP addresses in Syria, Russia, Lebanon, the United States and  Brazil.",
+      "In total, we found 110 files, 20  domains and 47 IP addresses associated with the attacks."
+    ],
+    "sent_list": [
+      "the attacks have also been seen in  turkey, saudi arabia, lebanon, palestine, united arab emirates, israel,  morocco, france and the united states.",
+      "we were able to track the c2 servers of the  attackers to ip addresses in syria, russia, lebanon, the united states and  brazil.",
+      "in total, we found 110 files, 20  domains and 47 ip addresses associated with the attacks."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "from figure 9, we learn that the url of the c&c server is hxxp://www.vacanzaimmobiliare.it/testla/webpanel/post.php, which was decrypted in the sendtoccserver function.",
+      "the http method is post, which was also decrypted."
+    ],
+    "sent_list": [
+      "$[para].",
+      "from figure 9, we learn that the url of the c&c server is hxxp:// $[fqdn] /testla/webpanel/ $[filename] , which was decrypted in the sendtoccserver function.",
+      "the  $[protocol]  method is post, which was also decrypted."
+    ],
+    "ioc_vector": [
+      -0.3333333333333333,
+      0.6666666666666667,
+      -0.3333333333333333,
+      0.6666666666666667,
+      0.6666666666666667,
+      -0.3333333333333333,
+      -0.3333333333333333,
+      -0.3333333333333333,
+      -0.3333333333333333,
+      -0.3333333333333333,
+      0.6666666666666667,
+      -0.3333333333333333
+    ],
+    "ioc_normalized": {
+      "fqdn": [
+        "www.vacanzaimmobiliare.it"
+      ],
+      "filename": [
+        "post.php"
+      ],
+      "url": [
+        "http://www.vacanzaimmobiliare.it/testla/webpanel/post.php"
+      ],
+      "protocol": [
+        "http"
+      ]
+    }
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "Theres a  Bitcoin wallet hard-coded inside the binary, but the malware tries to fetch a  new wallet address from the C2 server, probably to make it harder to trace how  successful the operation is and where the money goes.",
+      "None of the Bitcoin wallet addresses we  looked at had any transactions associated with them."
+    ],
+    "sent_list": [
+      "$[para].",
+      "theres a  bitcoin wallet hard-coded inside the binary, but the malware tries to fetch a  new wallet address from the c2 server, probably to make it harder to trace how  successful the operation is and where the money goes.",
+      "none of the bitcoin wallet addresses we  looked at had any transactions associated with them."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "None of the Bitcoin wallet addresses we  looked at had any transactions associated with them.",
+      "Since the C2 server provides Bitcoin wallet  information, its possible that the attackers are able to use a unique wallet  for each victim.",
+      "Another ransomware program that we analysed  recently is Onion."
+    ],
+    "sent_list": [
+      "none of the bitcoin wallet addresses we  looked at had any transactions associated with them.",
+      "since the c2 server provides bitcoin wallet  information, its possible that the attackers are able to use a unique wallet  for each victim.",
+      "another ransomware program that we analysed  recently is onion."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "However, it also breaks new ground.",
+      "First, Onion uses the anonymous Tor network  to hide its C2 servers.",
+      "This makes it  harder to track down the cybercriminals behind the malware."
+    ],
+    "sent_list": [
+      "however, it also breaks new ground.",
+      "first, onion uses the anonymous tor network  to hide its c2 servers.",
+      "this makes it  harder to track down the cybercriminals behind the malware."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "By contrast Onion implements this  communication as part of the malware code itself.",
+      "Onion also uses an unorthodox cryptographic  algorithm that makes file decryption impossible, even if traffic between the  Trojan and the C2 server is intercepted.",
+      "This Trojan not only uses asymmetric encryption, it also uses a  cryptographic protocol known as ECDH (Elliptic Curve Diffie-Hellman)."
+    ],
+    "sent_list": [
+      "by contrast onion implements this  communication as part of the malware code itself.",
+      "onion also uses an unorthodox cryptographic  algorithm that makes file decryption impossible, even if traffic between the  trojan and the c2 server is intercepted.",
+      "this trojan not only uses asymmetric encryption, it also uses a  cryptographic protocol known as ecdh (elliptic curve diffie-hellman)."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "$[para].",
+      "here is a breakdown of what happens with darkcomet when taking commands from the c2 or controller: implant beacons every 20 seconds back to the c2 to check in and wait for any more commands.",
+      "when desired by the operator, the c2 will send back a command using some custom traffic encryption scheme."
+    ],
+    "sent_list": [
+      "$[para].",
+      "here is a breakdown of what happens with darkcomet when taking commands from the c2 or controller: implant beacons every 20 seconds back to the c2 to check in and wait for any more commands.",
+      "when desired by the operator, the c2 will send back a command using some custom traffic encryption scheme."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
+  },
+  {
+    "origin_list": [
+      "here is a breakdown of what happens with darkcomet when taking commands from the c2 or controller: implant beacons every 20 seconds back to the c2 to check in and wait for any more commands.",
+      "when desired by the operator, the c2 will send back a command using some custom traffic encryption scheme.",
+      "the command is taken in by the implant, decrypted and then analyzed for: the implant will take this parsed information and execute the functionality."
+    ],
+    "sent_list": [
+      "here is a breakdown of what happens with darkcomet when taking commands from the c2 or controller: implant beacons every 20 seconds back to the c2 to check in and wait for any more commands.",
+      "when desired by the operator, the c2 will send back a command using some custom traffic encryption scheme.",
+      "the command is taken in by the implant, decrypted and then analyzed for: the implant will take this parsed information and execute the functionality."
+    ],
+    "ioc_vector": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ioc_normalized": {}
   }
 ]
