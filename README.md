@@ -7,7 +7,7 @@
 * After installing the required packages, use: `python3 TCENet.py` to run the test cases. 
 
 # The complete dataset.
-* This dataset will be part of our larger CTI data to be open-sourced in the future, along with datasets for other tasks. This dataset will continue to open source a portion of the data soon to help the research community. Please stay tuned.
+* This dataset will be part of our larger CTI data to be open-sourced in the future, along with datasets for other CTI tasks (NER, RE, Text-classification etc.). This dataset will continue to open source a portion of the data soon to help the research community. Please stay tuned.
 
 # Examples
 * The examples folder provides a STIX 2.1 TTP intelligence example and a Sigma detection rule example. You can use the TTP intelligence JSON in this STIX 2.1 visualization website:https://oasis-open.github.io/cti-stix-visualization/.
